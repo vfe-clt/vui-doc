@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 | v-ui</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="行你所行">
+    <link rel="preload" href="/vui-doc/assets/css/0.styles.46400a11.css" as="style"><link rel="preload" href="/vui-doc/assets/js/app.7084ccde.js" as="script"><link rel="preload" href="/vui-doc/assets/js/2.456197d5.js" as="script"><link rel="preload" href="/vui-doc/assets/js/13.de46f71b.js" as="script"><link rel="prefetch" href="/vui-doc/assets/js/10.41e5f863.js"><link rel="prefetch" href="/vui-doc/assets/js/11.214aa45c.js"><link rel="prefetch" href="/vui-doc/assets/js/12.8bc95def.js"><link rel="prefetch" href="/vui-doc/assets/js/3.eb3537f1.js"><link rel="prefetch" href="/vui-doc/assets/js/4.5afa3ed1.js"><link rel="prefetch" href="/vui-doc/assets/js/5.aba25225.js"><link rel="prefetch" href="/vui-doc/assets/js/6.a66c9ce8.js"><link rel="prefetch" href="/vui-doc/assets/js/7.60aee5a9.js"><link rel="prefetch" href="/vui-doc/assets/js/8.8befaa92.js"><link rel="prefetch" href="/vui-doc/assets/js/9.9567a5e9.js">
+    <link rel="stylesheet" href="/vui-doc/assets/css/0.styles.46400a11.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar custom-component"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vui-doc/" class="home-link router-link-active"><!----> <span class="site-name">v-ui</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vui-doc/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/vui-doc/components/" class="nav-link">
+  组件
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vui-doc/guide/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/vui-doc/components/" class="nav-link">
+  组件
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h1> <div class="language-JavaScript extra-class"><pre class="hljs"><code>npm i @vfe-clt/v-ui -S
+</code></pre></div><h1 id="整体引入"><a href="#整体引入" class="header-anchor">#</a> 整体引入</h1> <div class="language-JavaScript extra-class"><pre class="hljs"><code><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> VUI <span class="hljs-keyword">from</span> <span class="hljs-string">'@vfe-clt/v-ui'</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'@vfe-clt/v-ui/lib/index.css'</span>
+
+Vue.use(VUI)
+</code></pre></div><h1 id="按需引入"><a href="#按需引入" class="header-anchor">#</a> 按需引入</h1> <p>安装 <a href="https://github.com/ElementUI/babel-plugin-component" target="_blank" rel="noopener noreferrer"><code>babel-plugin-component</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-JavaScript extra-class"><pre class="hljs"><code>npm i babel-plugin-component -D
+</code></pre></div><p>配置.babelrc</p> <div class="language-javaScript extra-class"><pre class="hljs"><code>{
+  <span class="hljs-comment">//......</span>
+  <span class="hljs-comment">//其他配置</span>
+  <span class="hljs-comment">//......</span>
+  <span class="hljs-string">&quot;plugins&quot;</span>: [
+    [
+      <span class="hljs-string">&quot;component&quot;</span>,
+      {
+        <span class="hljs-string">&quot;libraryName&quot;</span>: <span class="hljs-string">&quot;@vfe-clt/v-ui&quot;</span>,
+        <span class="hljs-string">&quot;libDir&quot;</span>: <span class="hljs-string">&quot;lib&quot;</span>,
+        <span class="hljs-string">&quot;style&quot;</span>: <span class="hljs-string">&quot;index.css&quot;</span>
+      }
+    ]
+  ]
+}
+</code></pre></div><p>使用时直接引入组件，不再需要显示的引入css</p> <div class="language-JavaScript extra-class"><pre class="hljs"><code><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">'vue'</span>
+<span class="hljs-keyword">import</span> { Button } <span class="hljs-keyword">from</span> <span class="hljs-string">'@vfe-clt/v-ui'</span>
+
+Vue.use(Button)
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vui-doc/assets/js/app.7084ccde.js" defer></script><script src="/vui-doc/assets/js/2.456197d5.js" defer></script><script src="/vui-doc/assets/js/13.de46f71b.js" defer></script>
+  </body>
+</html>
